@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    This line is defined in parent and will load in everypage beacause it with no view name.
+    <div class="row">
+        <div class="col-sm-3" style="background-color:skyblue;" ui-view="uv1" ng-controller="uv1Controller">
+            <p>This viewName are created in child but used in parent </p>
+            view1 from parent <br>
+            <h3>{{uv1Variable}}</h3>
+            <ui-view></ui-view>
+        </div>
+        <div class="col-sm-9" style="background-color:aqua;" ui-view="uv2" ng-controller="uv2Controller">
+            <p>This viewName are created in child but used in parent </p>
+            view2 from parent<br>
+            <h3>{{uv2Variable}}</h3>
+            <ui-view></ui-view>
+        </div>
+    </div>
+</div>

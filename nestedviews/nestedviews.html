@@ -1,0 +1,40 @@
+<html ng-app="main">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="ajs.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container" ng-controller="cntrl">
+    <br>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand">Nested states and Views</a>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span3">
+            <div class="well">
+                <a ui-sref="s1">Parent</a><br>
+                <a ui-sref="c1">child</a>
+
+            </div>
+        </div>
+
+        <div class="span9">
+            <div class="well">
+                <div>
+                    <ui-view></ui-view>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
